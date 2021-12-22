@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Book store</title>
+    <link rel="stylesheet" type="text/css" href="Final.css">
+    <link rel="icon" href="img/logo.png" type="img/logo.png">
+</head>
+<body>
+<div class="login__wrapper hide">
+    <form action="" class="registration__form hide">
+        <h1>Registration</h1>
+        <button class="close__reg_btn">x</button>
+        <input id="RegName" type="text" placeholder="Your name">
+        <input id="RegEmail" type="text" placeholder="Your email">
+        <input id="RegPassword" type="password" placeholder="Your password">
+        <button class="sign__up__btn">Sign up</button>
+
+    </form>
+    <form action="" class="authorization__form hide">
+        <h1>Authorization</h1>
+        <button class="close__auth__btn">x</button>
+        <input id="loginEmail" type="text" placeholder="Your email">
+        <input id="loginPassword" type="password" placeholder="Your password">
+        <button class="sign__in__btn">Sign in</button>
+    </form>
+</div>
+<header class="header">
+    <div class="header__about">
+        <!--        <a class="header__about__us" id="top" href="#">О нас</a>
+                <a class="header__about__news" href="#">Новости и мероприятия</a>
+                <a class="header__about__delivery" id="buy" href="Buybook.html">Доставка и оплата</a>
+                <a class="header__about__delivery" href="adminPanel.html">Админ панель</a>-->
+    </div>
+
+    <div class="header__profile">
+        <button class="header__profile__register">Регистрация</button>
+        <button class="header__profile__login">Войти</button>
+    </div>
+
+    <div class="header__information">
+        <img class="header__information__logo" src="img/logo.png">
+        <a class="header__information__book" href="#book">Книги</a>
+        <a class="header__information__books" href="#">Антикварные книги</a>
+        <a class="header__information__present" href="#box">Подарки</a>
+        <a class="header__information__other" href="#">Прочее</a>
+        <p class="header__information__bookstore">Мой любимый книжный</p>
+    </div>
+</header>
+
+
+<section id="cart_items" class="">
+    <div class="container" style="width: 1200px;">
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed" style="width: 100%;">
+                <thead>
+                <tr class="cart_menu">
+                    <td class="image">Name</td>
+                    <td class="price">Gmail</td>
+                    <td class="total">Block/Unblock</td>
+                    <td class="status">Status</td>
+                    <td class="status">Delete</td>
+                </tr>
+                </thead>
+                <tbody class="tbodyOfUsers">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section> <!--/#cart_items-->
+
+<footer>
+        <div class="footer">
+            <b class="footer__book">Книгоман</b>
+            <b class="footer__book">Наш интернет магазин</b>
+            <p class="footer__book">О нас</p>
+            <p class="footer__book">Тел.:+7(708)312-17-70</p>
+            <p class="footer__book">Новости и мероприятия</p>
+            <p class="footer__book">WhatsApp:+7(707)370-11-70</p>
+            <p class="footer__book">Доставка и оплата</p>
+            <p class="footer__book">Книжный магазин "Книгоман"</p>
+            <p class="footer__book">Отзывы</p>
+            <p class="footer__book">г.Алматы, ул.Манаса 34/1</p>
+            <div class="icon">
+            <a href=""><img class="icon__twitter" src="img/twitter.png"></a>
+            <a href="https://instagram.com/iitu_kz?utm_medium=copy_link"><img class="icon__inst" src="img/inst.png"></a>
+            <a href=""><img class="icon__facebook" src="img/facebook.png"></a>
+            <a href=""><img class="icon__wpp" src="img/wpp.png"></a>
+        </div>
+            <p class="footer__information__year">© 2021 IT1-2017</p>
+            <p class="footer__information__makers">Cоздали:Стыбаева Нургуль, Амангельды Альбина</p>
+        </div>
+
+ <a href="#top" class="button_top" style="display: inline;"></a>        
+    
+</footer>
+<script src="Final.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
