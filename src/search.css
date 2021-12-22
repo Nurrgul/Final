@@ -1,0 +1,189 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+ .header__about{
+    background-color: white;
+    height: 35px;
+    width: 100%;
+    position: relative;
+    top: 9px;
+ }
+a:hover{
+    color: red;
+}
+.header__profile{
+    position: relative;
+    left: 970px;
+    bottom: 27px;
+}
+.header__profile__register, .header__profile__login{
+    border: 2px solid #f5982f;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 15px;
+    padding: 8px;
+}
+.header__information__logo{
+    height: 110px;
+    width: 110px;
+    position: relative;
+    left: 40px;
+}
+.header__information__bookstore{
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+    font-size: 17px;
+}
+.header__information{
+    background-color: #cfb79b;
+    height: 130px;
+    display: grid;
+    grid-template-columns: 300px 130px 330px 160px 100px;
+    font-size: 30px;
+    width: 1300px;
+  }
+.header__information__book, .header__information__books, .header__information__present, .header__information__other{
+    position: relative;
+    top: 30px;
+}
+main{
+background-image: url(img/1.jpeg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+}
+
+.employee__form {
+    border-style: 1px solid white;
+    padding: 10px;
+    margin: auto;
+    width: 250px;
+    background-color: #cfb79b;
+    
+}
+.employee__form:hover, .employees-table:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 0 rgba(107,127,153,0.5);
+}
+
+.employees-table {
+    border-style: 1px solid;
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+    background-color: white;
+
+}
+h3{
+text-align: center;
+color: black;
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #403327;
+    text-align: left;
+    padding: 8px;
+    background-color: #cfb79b;
+}
+
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1.5px solid #4f3c2b;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #403327;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+.footer__book{
+    display: flex;
+    position: relative;
+    left: 165px;
+    color: black;
+    font-size: 15px;
+    line-height: 0.5em;
+    top: 40px;
+    flex-direction: column;
+}
+.icon{
+    display: grid;
+    grid-template-columns: repeat(4, 90px) !important;
+}
+.icon{
+    position: relative;
+    left: 800px;
+    bottom: 135px;
+}
+.icon__twitter, .icon__inst, .icon__facebook, .icon__wpp{
+    height: 55px;
+    width: 55px;
+}
+.fa-facbook, .fa-twitter,.fa-instagram, .fa-whatsapp{
+    width: 50px;
+ }
+
+.footer{
+    background-color: #cfb79b;
+    position: relative;
+    height: 355px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+
+
+.footer__information__year{
+    position: relative;
+    color: #525151 ;
+    right: 37px;
+    top: 50px;
+ }
+ .footer__information__makers{
+    position: relative;
+    color: #525151 ;
+    left: 340px;
+    bottom: 14.5px;
+    width: 400px;
+    
+ }

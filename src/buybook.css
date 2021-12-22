@@ -1,0 +1,226 @@
+.login__wrapper{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.registration__form, .authorization__form{
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffffff;
+	border-radius: 20px;
+	position: relative;
+}
+.close__reg_btn, .close__auth__btn{
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.registration__form input, .authorization__form input{
+	width: 80%;
+	margin-top: 20px;
+}
+.sign__up__btn, .sign__in__btn{
+	border: 2px solid #fac648;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 15px;
+	cursor: pointer;
+	width: 87%;
+	color: #fac648;
+	height: 40px;
+}
+.hide{
+	display: none;
+
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color: black;
+	margin: 10px;
+}
+ .header__about{
+ 	background-color: white;
+ 	height: 10px;
+ 	width: 100%;
+ 	position: relative;
+ 	top: 15px;
+ }
+a:hover{
+	color: red;
+}
+.header__profile{
+	position: relative;
+	left: 970px;
+	bottom: 20px;
+}
+.header__profile__register, .header__profile__login{
+	border: 2px solid #f5982f;
+	color: black;
+	border-radius: 10px;
+    margin: 10px;
+    font-size: 15px;
+    padding: 8px;
+}
+.header__information__logo{
+	height: 110px;
+	width: 110px;
+	position: relative;
+	left: 40px;
+}
+.header__information__bookstore{
+	position: relative;
+	bottom: 20px;
+	left: 15px;
+	font-size: 17px;
+}
+.header__information{
+	background-color: #cfb79b;
+	height: 130px;
+	display: grid;
+    grid-template-columns: 300px 130px 330px 160px 100px;
+    font-size: 30px;
+  }
+.header__information__book, .header__information__books, .header__information__present, .header__information__other{
+	position: relative;
+	top: 30px;
+}
+.buy{
+	position: relative;
+	border: 2px solid #fac648;
+	height: 300px;
+	width: 350px;
+	left: 430px;
+	top: 60px;	
+	padding: 10px;
+	line-height: 2em;
+	background-color: white;
+}
+
+main{
+	background-image: url(img/1.jpeg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height:450px;
+}
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ border: 2px soid #009614;
+ background-color: #009614;
+
+}
+.scroll-left p {
+color: whitesmoke;
+font-size: 20px;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 10s linear infinite;
+ -webkit-animation: scroll-left 10s linear infinite;
+ animation: scroll-left 20s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+.buy__submit{
+	border: 1px solid #fac648;
+	background-color: #cfb79b;
+	border-radius: 5px;
+	position: relative;
+	left: 123px;
+	font-size: 12px;
+}
+.footer__book{
+	display: flex;
+	position: relative;
+	left: 165px;
+	color: black;
+	font-size: 15px;
+	line-height: 0.5em;
+	top: 40px;
+	flex-direction: column;
+}
+.icon{
+	display: grid;
+	grid-template-columns: repeat(4, 90px) !important;
+}
+.icon{
+	position: relative;
+	left: 800px;
+	bottom: 135px;
+}
+.icon__twitter, .icon__inst, .icon__facebook, .icon__wpp{
+	height: 55px;
+	width: 55px;
+}
+.fa-facbook, .fa-twitter,.fa-instagram, .fa-whatsapp{
+ 	width: 50px;
+ }
+
+.footer{
+	background-color: #cfb79b;
+	position: relative;
+	height: 380px;
+	display: grid;
+	grid-template-columns: repeat(2, 200px);
+}
+
+.footer__information__year{
+ 	position: relative;
+ 	color: #525151 ;
+ 	right: 37px;
+ 	top: 50px;
+ }
+ .footer__information__makers{
+ 	position: relative;
+ 	color: #525151 ;
+ 	left: 340px;
+ 	bottom: 18.5px;
+ 	width: 400px;
+ 	
+ }

@@ -1,0 +1,217 @@
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+ .header__about{
+    background-color: white;
+    height: 35px;
+    width: 100%;
+    position: relative;
+    top: 9px;
+ }
+a:hover{
+    color: red;
+}
+.header__profile{
+    position: relative;
+    left: 970px;
+    bottom: 27px;
+}
+.header__profile__register, .header__profile__login{
+    border: 2px solid #f5982f;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 15px;
+    padding: 8px;
+}
+.header__information__logo{
+    height: 110px;
+    width: 110px;
+    position: relative;
+    left: 40px;
+}
+.header__information__bookstore{
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+    font-size: 17px;
+}
+.header__information{
+    background-color: #cfb79b;
+    height: 130px;
+    display: grid;
+    grid-template-columns: 300px 130px 330px 160px 100px;
+    font-size: 30px;
+    width: 1300px;
+  }
+.header__information__book, .header__information__books, .header__information__present, .header__information__other{
+    position: relative;
+    top: 30px;
+}
+main{
+background-image: url(img/1.jpeg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 500px;
+}
+.book {
+  position: relative;
+  bottom: 200px;
+  left: 450px;
+  margin: auto;
+  width: 15rem;
+  height: 10rem;
+  perspective: 70rem;
+}
+.cover {
+  background-color: #36354e;
+  transform: rotateY(0deg);
+  width: 9.25rem;
+  height: 12.5rem;
+}
+.page {
+  top: 0.25rem;
+  left: 0.25rem;
+  background-color: #e9e6c4;
+  transform: rotateY(0deg);
+  width: 9rem;
+  height: 12rem;
+  text-align: right;
+  font-size: 8px;
+  color: #777;
+  font-family: monospace;
+}
+.page::before, .page::after {
+  display: block;
+  border-top: 1px dashed rgba(0, 0, 0, 0.3);
+  content: "";
+  padding-bottom: 1rem;
+}
+.cover, .page {
+  position: absolute;
+  padding: 1rem;
+  transform-origin: 100% 0;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+    0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.cover.turn {
+  animation: bookCover 3s forwards;
+}
+.page.turn {
+  animation: bookOpen 3s forwards;
+}
+.page:nth-of-type(1) {
+  animation-delay: 0.05s;
+}
+.page:nth-of-type(2) {
+  animation-delay: 0.33s
+}
+.page:nth-of-type(3) {
+  animation-delay: 0.66s;
+}
+.page:nth-of-type(4) {
+  animation: bookOpen150deg 3s forwards;
+  animation-delay: 0.99s;
+}
+.page:nth-of-type(5) {
+  animation: bookOpen30deg 3s forwards;
+  animation-delay: 1.2s;
+}
+.page:nth-of-type(6) {
+  animation: bookOpen55deg 3s forwards;
+  animation-delay: 1.25s;
+}
+@keyframes bookOpen {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 999;}
+}
+@keyframes bookCover {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 1;}
+}
+@keyframes bookOpen150deg {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(150deg);
+    z-index: 999;}
+}
+@keyframes bookOpen55deg {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(55deg);
+    z-index: 999;}
+}
+@keyframes bookOpen30deg {
+  50% { z-index: 999 }
+  100% {  transform: rotateY(30deg);
+    z-index: 999;}
+}
+h3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    position: relative;
+    left: 335px;
+}
+.footer__book{
+    display: flex;
+    position: relative;
+    left: 165px;
+    color: black;
+    font-size: 15px;
+    line-height: 0.5em;
+    top: 40px;
+    flex-direction: column;
+}
+.icon{
+    display: grid;
+    grid-template-columns: repeat(4, 90px) !important;
+}
+.icon{
+    position: relative;
+    left: 800px;
+    bottom: 135px;
+}
+.icon__twitter, .icon__inst, .icon__facebook, .icon__wpp{
+    height: 55px;
+    width: 55px;
+}
+.fa-facbook, .fa-twitter,.fa-instagram, .fa-whatsapp{
+    width: 50px;
+ }
+
+.footer{
+    background-color: #cfb79b;
+    position: relative;
+    height: 355px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.footer__information__year{
+    position: relative;
+    color: #525151 ;
+    right: 37px;
+    top: 50px;
+ }
+ .footer__information__makers{
+    position: relative;
+    color: #525151 ;
+    left: 340px;
+    bottom: 14.5px;
+    width: 400px;
+    
+ }
