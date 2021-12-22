@@ -1,3 +1,3 @@
 # Final
 Stybaeva Nurgul
-AmangeldiAlbina
+Amangeldy Albina
