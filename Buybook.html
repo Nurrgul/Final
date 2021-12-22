@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Buy book</title>
+	<link rel="stylesheet" type="text/css" href="src/buybook.css">
+	<link rel="icon" href="img/logo.png" type="img/logo.png">
+</head>
+<body>
+<div class="login__wrapper hide">
+	<form action="" class="registration__form hide">
+		<h1>Registration</h1>
+		<button class="close__reg_btn">x</button>
+		<input id="RegName" type="text" placeholder="Your name">
+		<input id="RegEmail" type="text" placeholder="Your email">
+		<input id="RegPassword" type="password" placeholder="Your password">
+		<button class="sign__up__btn">Sign up</button>
+
+	</form>
+	<form action="" class="authorization__form hide">
+		<h1>Authorization</h1>
+		<button class="close__auth__btn">x</button>
+		<input id="loginEmail" type="text" placeholder="Your email">
+		<input id="loginPassword" type="password" placeholder="Your password">
+		<button class="sign__in__btn">Sign in</button>
+	</form>
+</div>
+<header class="header">
+	<div class="header__about">
+		<!--        <a class="header__about__us" id="top" href="#">О нас</a>
+                <a class="header__about__news" href="#">Новости и мероприятия</a>
+                <a class="header__about__delivery" id="buy" href="Buybook.html">Доставка и оплата</a>
+                <a class="header__about__page" href="Final.html">Главная</a>
+                <a class="header__about__delivery" href="adminPanel.html">Админ панель</a>
+             <a class="header__about__page" href="Final.html">Главная</a>-->
+	</div>
+
+	<div class="header__profile">
+		<button class="header__profile__register">Регистрация</button>
+		<button class="header__profile__login">Войти</button>
+	</div>
+
+	<div class="header__information">
+		<img class="header__information__logo" src="img/logo.png">
+		<a class="header__information__book" href="#book">Книги</a>
+		<a class="header__information__books" href="#">Антикварные книги</a>
+		<a class="header__information__present" href="#box">Подарки</a>
+		<a class="header__information__other" href="#">Прочее</a>
+		<p class="header__information__bookstore">Мой любимый книжный</p>
+	</div>
+</header>
+<main>
+	<div class="scroll-left">
+		<p>При покупке двух книг покупателю предоставляется скидка 15%,трех-скидка 26%,четырёх-скидка 30%. Акция действует до 5 января. Не успусти свою возжожность!!!</p>
+	</div>
+
+	<div class="buy">
+  		<p class="buy__book">Для покупки книг(и), заполните анкету:</p>
+<form id="myForm" >
+    <div class="buy__book__form">
+      	<label class="buy__book__form__name" for="name">Имя:</label>
+      		<input class="buy__book__form__name" type="name"  placeholder="Enter your name" name="name">
+    </div>
+    <div class="buy__book__form">
+      	<label class="buy__book__form__sname" for="sname">Фамилия:</label>
+      		<input class="buy__book__form__sname" type="suname" id="surename" placeholder="Enter your surename" name="sname">
+    </div>
+   <div class="buy__book__form">
+   		<label class="buy__book__form__email" for="Email">Email:</label>
+   			<input class="buy__book__form__email" type="email" id="email" placeholder="Enter your email" name="email">
+   </div>
+   <div class="buy__book__form">
+   		<label class="buy__book__form__num" for="number">Номер телефона:</label>
+   			<input class="buy__book__form__num" type="phone" id="phone" placeholder="+7(xxx) xxx xxxx" name="phone">
+   </div>
+
+	<label class="residence" for="country">Выберите страну проживания:</label>
+		<select class="residence__choose" name="country" form="countryform">
+  			<option class="residence__choose__contry" value="Choose">Выбрать.</option>
+  			<option class="residence__choose__contry" value="Kazakhstan">Казахстан</option>
+  			<option class="residence__choose__contry" value="Russia">Россия</option>
+  			<option class="residence__choose__contry" value="Ukraine">Украина</option>
+  			<option class="residence__choose__contry" value="Uzbekistan">Узбекистан</option>
+  			<option class="residence__choose__contry" value="Kyrhyztan">Кыргызстан</option>
+		</select><br>
+
+			<label class="residence" for="city">Выберите город проживания:</label>
+		<select class="residence__choose" name="city" form="countryform">
+  			<option class="residence__choose__city" value="Choose">Выбрать.</option>
+  			<option class="residence__choose__city" value="Almaty">Алматы</option>
+  			<option class="residence__choose__city" value="Aktau">Актау</option>
+  			<option class="residence__choose__city" value="Nur-sultan">Нур-Султан</option>
+  			<option class="residence__choose__city" value="Pavlodar">Павлодар</option>
+  			<option class="residence__choose__city" value="Semei">Семей</option>
+		</select><br>
+		<input type="submit" name="submit" class="buy__submit" id="submit" value="Отправить">
+</div>
+</form>
+</main>
+<footer>
+		<div class="footer">
+			<b class="footer__book">Книгоман</b>
+			<b class="footer__book">Наш интернет магазин</b>
+			<p class="footer__book">О нас</p>
+			<p class="footer__book">Тел.:+7(708)312-17-70</p>
+			<p class="footer__book">Новости и мероприятия</p>
+			<p class="footer__book">WhatsApp:+7(707)370-11-70</p>
+			<p class="footer__book">Доставка и оплата</p>
+			<p class="footer__book">Книжный магазин "Книгоман"</p>
+			<p class="footer__book">Отзывы</p>
+			<p class="footer__book">г.Алматы, ул.Манаса 34/1</p>
+			<div class="icon">
+			<a href="https://www.instagram.com/iitu_kz/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/iitukz"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/iitukz/"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/iitukz"><i class="fab fa-whatsapp"></i></a>
+		</div>
+			<p class="footer__information__year">© 2021 IT1-2017</p>
+			<p class="footer__information__makers">Cоздали:Стыбаева Нургуль, Амангельды Альбина</p>
+		</div>
+
+ <a href="#top" class="button_top" style="display: inline;"></a>	
+ 
+	
+</footer>
+<script src="buybook.js"></script>
+<script src="login.js"></script>
+<script src="https://kit.fontawesome.com/51c82fa37e.js" crossorigin="anonymous"></script>
+</body>
+</html>

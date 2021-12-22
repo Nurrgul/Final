@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Book search</title>
+    <link rel="stylesheet" type="text/css" href="src/search.css">
+    <link rel="icon" href="img/logo.png" type="img/logo.png">
+</head>
+<body>
+    <header class="header">
+        <div class="header__about">
+            <a class="header__about__us" id="top"href="#">О нас</a>
+            <a class="header__about__news" href="#">Новости и мероприятия</a>
+            <a class="header__about__delivery" href="Buybook.html">Доставка и оплата</a>
+            <a class="header__about__page" href="index.html">Главная</a>
+        </div>
+        
+        <div class="header__profile">
+            <a class="header__profile__register" href="#">Регистрация</a>
+            <a class="header__profile__login" href="#">Войти</a>
+        </div>
+
+        <div class="header__information">
+            <img class="header__information__logo" src="img/logo.png">
+            <a class="header__information__book" href="#book">Книги</a>
+            <a class="header__information__books" href="#">Антикварные книги</a>
+            <a class="header__information__present" href="#box">Подарки</a>
+            <a class="header__information__other" href="#">Прочее</a>
+            <p class="header__information__bookstore">Мой любимый книжный</p>
+        </div>
+    </header>
+<main>
+
+<h3 class="">Расширенный поиск</h3>
+
+    <div class="employee__form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label class="employee__form__author">Автор</label>
+                <label class="validation-error hide" id="AuthorValidationError">This field is required.</label>
+                <input type="text" name="author" id="author">
+            </div>
+            <div>
+                <label class="employee__form__name">Название</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label class="employee__form__director">Редактор</label>
+                <input type="text" name="director" id="director">
+            </div>
+            <div>
+                <label class="employee__form__genre">Жанр</label>
+                <input type="text" name="genre" id="genre">
+            </div>
+             <div>
+                <label class="employee__form__year">Год издания</label>
+                <input type="text" name="year" id="year">
+            </div>
+
+            <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+        </div>
+        <br/>
+        <div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Автор</th>
+                            <th>Название</th>
+                            <th>Редактор</th>
+                            <th>Жанр</th>
+                            <th>Год издания</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+
+</main>
+<footer>
+        <div class="footer">
+            <b class="footer__book">Книгоман</b>
+            <b class="footer__book">Наш интернет магазин</b>
+            <p class="footer__book">О нас</p>
+            <p class="footer__book">Тел.:+7(708)312-17-70</p>
+            <p class="footer__book">Новости и мероприятия</p>
+            <p class="footer__book">WhatsApp:+7(707)370-11-70</p>
+            <p class="footer__book">Доставка и оплата</p>
+            <p class="footer__book">Книжный магазин "Книгоман"</p>
+            <p class="footer__book">Отзывы</p>
+            <p class="footer__book">г.Алматы, ул.Манаса 34/1</p>
+            <div class="icon">
+            <a href="https://www.instagram.com/iitu_kz/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/iitukz"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/iitukz/"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/iitukz"><i class="fab fa-whatsapp"></i></a>
+        </div>
+            <p class="footer__information__year">© 2021 IT1-2017</p>
+            <p class="footer__information__makers">Cоздали:Стыбаева Нургуль, Амангельды Альбина</p>
+        </div>
+
+ <a href="#top" class="button_top" style="display: inline;"></a>    
+ 
+    
+</footer>
+<script src="search.js"></script>
+<script src="login.js"></script>
+<script src="https://kit.fontawesome.com/51c82fa37e.js" crossorigin="anonymous"></script>
+</body>
+</html>

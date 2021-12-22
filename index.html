@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Book store</title>
+	<link rel="stylesheet" type="text/css" href="src/Final.css">
+	<link rel="icon" href="img/logo.png" type="img/logo.png">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+</head>
+<body>
+	<div class="login__wrapper hide">
+    <form action="" class="registration__form hide">
+        <h1>Registration</h1>
+        <button class="close__reg_btn">x</button>
+        <input id="RegName" type="text" placeholder="Your name">
+        <input id="RegEmail" type="text" placeholder="Your email">
+        <input id="RegPassword" type="password" placeholder="Your password">
+        <button class="sign__up__btn">Sign up</button>
+
+    </form>
+    <form action="" class="authorization__form hide">
+        <h1>Authorization</h1>
+        <button class="close__auth__btn">x</button>
+        <input id="loginEmail" type="text" placeholder="Your email">
+        <input id="loginPassword" type="password" placeholder="Your password">
+        <button class="sign__in__btn">Sign in</button>
+    </form>
+</div>
+
+	<header class="header">
+		<div class="header__about">
+
+			<!--        <a class="header__about__us" id="top" href="aboutus.html">О нас</a>
+        <a class="header__about__news" href="#">Новости и мероприятия</a>
+        <a class="header__about__delivery" id="buy" href="Buybook.html">Доставка и оплата</a>
+        <a class="header__about__delivery" href="adminPanel.html">Админ панель</a>-->
+			
+		</div>
+		
+		<div class="header__profile">
+			<a class="header__profile__register" href="#">Регистрация</a>
+			<a class="header__profile__login" href="#">Войти</a>
+		</div>
+
+		<div class="header__information">
+			<img class="header__information__logo" src="img/logo.png">
+			<a class="header__information__book" href="#book">Книги</a>
+			<a class="header__information__books" href="#">Антикварные книги</a>
+			<a class="header__information__present" href="#box">Подарки</a>
+			<a class="header__information__other" href="#">Прочее</a>
+			<p class="header__information__bookstore">Мой любимый книжный</p>
+		</div>
+	</header>
+<main class="main">
+	<div class="form">
+		<form class="form__search">
+  			<input class="form__search__book" type="text" placeholder="Искать книгу...">
+  			<button class="form__search__button" type="submit"></button>
+		</form>
+	</div>
+
+	<div class="search">
+		<a class="search__extended" href="Search.html">Расширенный поиск</a>
+	</div>
+
+	<div id="carousel">
+    	<ul>
+    		<li><img src="img/4.png"></li>
+      		<li><img src="img/3.png"></li>
+      		<li><img src="img/2.png"></li>
+      		<li><img src="img/5.png"></li>
+    	</ul>
+  </div>
+
+<div class="page">
+
+<h3 class="range" id="book">Наши бестселлеры:</h3>
+<div class="books" >
+	<div class="books__item">
+		<img class="books__item__img" src="img/10.jpeg" >
+		<p class="books__item__author">Мона Кастен</p>
+		<p class="books__item__name">Save you</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/7.jpeg" >
+		<p class="books__item__author">Джоджо Мойес</p>
+		<p class="books__item__name">До встречи с тобой</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/9.jpeg" >
+		<p class="books__item__author">Михаил Булгаков</p>
+		<p class="books__item__name">Мастер и Маргарита</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/11.jpeg" >
+		<p class="books__item__author">Мона Кастен</p>
+		<p class="books__item__name">Save me</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/8.jpeg" >
+		<p class="books__item__author">Джоджо Мойес</p>
+		<p class="books__item__name">После тебя</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/6.png" >
+		<p class="books__item__author">Дж.К.Роулинг</p>
+		<p class="books__item__name">Гарри Потер: орден феникса</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/12.jpeg" >
+		<p class="books__item__author">А.Беляев</p>
+		<p class="books__item__name">Человек-амфибия</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/13.jpeg" >
+		<p class="books__item__author">О.Уайлдь</p>
+		<p class="books__item__name">Портрет Дориана Грея</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/14.jpeg" >
+		<p class="books__item__author">Джек Лондон</p>
+		<p class="books__item__name">Мартин Иден и Зов Пердков</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/15.jpeg" >
+		<p class="books__item__author">Дж.Остин</p>
+		<p class="books__item__name">Гордость и предубеждение</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/16.jpeg" >
+		<p class="books__item__author">Тилли Коул</p>
+		<p class="books__item__name">Тысяча незабываемых поцелуев</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+	<div class="books__item">
+		<img class="books__item__img" src="img/17.jpeg">
+		<p class="books__item__author">Джен Синсеро</p>
+		<p class="books__item__name">НИ СЫ</p>
+		<a href="Buybook.html"><button class="buy__book">Купить</button></a>
+	</div>
+</div>
+</div>
+
+<div class="page__part2">
+	<div class="interesting">
+		<div class="something"><a class="something__text" href="#hidden2" onclick="view('hidden2'); return false">Кое что интересное! (Нажми)</a></div>
+		<div id="hidden2" style="display: none;">
+			<div class="interesting__what">
+				<p class="interesting__what__text">Ходят легенды о том, что в одной из наших книг имеется заклинание, для того чтобы попасть в Хогвардс!</p>
+				<img class="interesting__what__gif" id="garry" src="img/garry.gif">
+			</div>
+		</div>
+  </div>
+
+<h3 class="boxes" id="box">Подарочные боксы.</h3>
+  <div class="box">
+  	<div class="box__present">
+  		<img class="box__present__img" src="img/box1.jpg">
+  		<p class="box__present__name">Бокс:"Книгоман".</p>
+  		<a href="Buybook.html"><button class="buy__box">Купить</button></a>
+  	</div>
+  	<div class="box__present">
+  		<img class="box__present__img" src="img/box2.jpg">
+  		<p class="box__present__name">Бокс:"Для самых нежныж".</p>
+  		<a href="Buybook.html"><button class="buy__box">Купить</button></a>
+  	</div>
+  	<div class="box__present">
+  		<img class="box__present__img" src="img/box3.jpg">
+  		<p class="box__present__name">Бокс:"Мечтатель".</p>
+  		<a href="Buybook.html"><button class="buy__box">Купить</button></a>
+  	</div>
+  	<div class="box__present">
+  		<img class="box__present__img" src="img/box4.jpg">
+  		<p class="box__present__name">Бокс:"За чашкой кофе".</p>
+  		<a href="Buybook.html"><button class="buy__box">Купить</button></a>
+  	</div>
+  	<div class="box__present">
+  		<img class="box__present__img" src="img/box5.jpg">
+  		<p class="box__present__name">Бокс:"Меленький принц".</p>
+  		<a href="Buybook.html"><button class="buy__box">Купить</button></a>
+  	</div>
+  	<div class="box__present">
+  		<img class="box__present__img" src="img/box6.jpg">
+  		<p class="box__present__name">Бокс:"С любовью".</p>
+  		<a href="Buybook.html"><button class="buy__box">Купить</button></a>
+  	</div>
+  </div>
+  
+ 
+
+</div>  
+</main>
+
+<footer>
+		<div class="footer">
+			<b class="footer__book">Книгоман</b>
+			<b class="footer__book">Наш интернет магазин</b>
+			<p class="footer__book">О нас</p>
+			<p class="footer__book">Тел.:+7(708)312-17-70</p>
+			<p class="footer__book">Новости и мероприятия</p>
+			<p class="footer__book">WhatsApp:+7(707)370-11-70</p>
+			<p class="footer__book">Доставка и оплата</p>
+			<p class="footer__book">Книжный магазин "Книгоман"</p>
+			<p class="footer__book">Отзывы</p>
+			<p class="footer__book">г.Алматы, ул.Манаса 34/1</p>
+			<div class="icon">
+			<a href="https://www.instagram.com/iitu_kz/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/iitukz"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/iitukz/"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/iitukz"><i class="fab fa-whatsapp"></i></a>
+		</div>
+			<p class="footer__information__year">© 2021 IT1-2017</p>
+			<p class="footer__information__makers">Cоздали:Стыбаева Нургуль, Амангельды Альбина</p>
+		</div>
+
+ <a href="#top" class="button_top" style="display: inline;"></a>	
+ 
+	
+</footer>
+<script src="Final.js"></script>
+<script src="login.js"></script>
+<script src="https://kit.fontawesome.com/51c82fa37e.js" crossorigin="anonymous"></script>
+</body>
+</html>
